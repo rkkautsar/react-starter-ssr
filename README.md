@@ -1,3 +1,5 @@
+> **Use [react-starter](https://github.com/rkkautsar/react-starter) for simple non-server-side-rendering projects**
+
 ## Description
 
 An opinionated simple react boilerplate
