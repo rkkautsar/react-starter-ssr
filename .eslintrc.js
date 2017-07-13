@@ -1,4 +1,5 @@
 const path = require('path');
+
 const cwd = process.cwd();
 
 module.exports = {
@@ -27,10 +28,14 @@ module.exports = {
   globals: {
     document: 1,
     window: 1,
+    __DEVELOPMENT: 1,
+    __SERVER__: 1,
   },
   settings: {
     'import/resolver': {
-      alias: [['@', path.resolve(cwd, 'src')]],
+      webpack: {
+        config: 'webpack.config.client.js',
+      },
     },
   },
 };
